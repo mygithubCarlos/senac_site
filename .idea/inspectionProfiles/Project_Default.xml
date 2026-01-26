@@ -1,0 +1,73 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="altair" />
+          <option value="attrs" />
+          <option value="blinker" />
+          <option value="cachetools" />
+          <option value="certifi" />
+          <option value="charset-normalizer" />
+          <option value="click" />
+          <option value="colorama" />
+          <option value="decorator" />
+          <option value="duckdb" />
+          <option value="gitdb" />
+          <option value="GitPython" />
+          <option value="google-auth" />
+          <option value="google-auth-oauthlib" />
+          <option value="gspread" />
+          <option value="gspread-dataframe" />
+          <option value="gspread-formatting" />
+          <option value="gspread-pandas" />
+          <option value="idna" />
+          <option value="Jinja2" />
+          <option value="jsonschema" />
+          <option value="jsonschema-specifications" />
+          <option value="MarkupSafe" />
+          <option value="narwhals" />
+          <option value="numpy" />
+          <option value="oauthlib" />
+          <option value="packaging" />
+          <option value="pandas" />
+          <option value="pillow" />
+          <option value="protobuf" />
+          <option value="pyarrow" />
+          <option value="pyasn1" />
+          <option value="pyasn1_modules" />
+          <option value="pydeck" />
+          <option value="python-dateutil" />
+          <option value="pytz" />
+          <option value="referencing" />
+          <option value="requests" />
+          <option value="requests-oauthlib" />
+          <option value="rpds-py" />
+          <option value="rsa" />
+          <option value="six" />
+          <option value="smmap" />
+          <option value="sql_metadata" />
+          <option value="sqlparse" />
+          <option value="st-gsheets-connection" />
+          <option value="streamlit" />
+          <option value="tenacity" />
+          <option value="toml" />
+          <option value="tornado" />
+          <option value="typing_extensions" />
+          <option value="tzdata" />
+          <option value="urllib3" />
+          <option value="validators" />
+          <option value="watchdog" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pandas-stubs==2.3.3.251201" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
