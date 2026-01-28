@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Senac Site{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Senac Site</h1>
+            <nav>
+              <a href="{% url 'home' %}">Home</a>
+              <a href="{% url 'sobre' %}">Sobre</a>
+              <a href="{% url 'contato' %}">Contato</a>
+              <a href="{% url 'ajuda' %}">Ajuda</a>
+            </nav>
+        <hr>
+    </header>
+    <main>
+    {% block content %}{% endblock %}
+    </main>
+    <hr>
+    <footer>
+        <small>© {% now "Y" %} - Senac Site Online</small>
+    </footer>
+</body>
+</html>
