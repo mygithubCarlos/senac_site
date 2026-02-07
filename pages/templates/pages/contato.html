@@ -1,8 +1,55 @@
 {% extends "pages/base.html" %}
 
-{% block title %}Senac Site > Contato{% endblock %}
+{% block title %}Contato, Senac Site Online{% endblock %}
 
 {% block content %}
-  <h2>Contato</h2>
-  <p>Entre em contato pelo e-mail: email@senac.com</p>
+
+<section aria-labelledby="titulo-contato">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h1 id="titulo-contato" class="card-title mb-3">
+        <i class="fa-solid fa-envelope me-2 text-primary"></i>
+        Contato
+      </h1>
+
+      {% if form.errors %}
+        <div class="alert alert-danger">
+          <ul class="mb-0">
+            {% for field in form %}
+              {% for error in field.errors %}
+                <li>{{ error }}</li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      <form method="post">
+        {% csrf_token %}
+
+        <div class="mb-3">
+          {{ form.nome.label_tag }}
+          {{ form.nome }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.email.label_tag }}
+          {{ form.email }}
+        </div>
+
+        <div class="mb-3">
+          {{ form.mensagem.label_tag }}
+          {{ form.mensagem }}
+        </div>
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="submit">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 {% endblock %}
